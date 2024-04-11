@@ -1,14 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 import search from './assets/icons/search.svg'
-import { useStateContext } from "./Context";
-import { BackgroundLayout } from "./Components/BackgroundLayout.jsx";
+import {BackgroundLayout} from "./Components/BackgroundLayout.jsx";
 function App() {
 
   const [input, setInput] = useState('')
 
-/*   const {weather} = useStateContext()
-  console.log(weather) */
+//  const {weather} = useStateContext()
+//  console.log(weather) 
   return (
     <div className="w-full h-screen text-white px-8">
       <nav className=" w-full p-3 flex justify-between items-center">
@@ -25,9 +24,7 @@ function App() {
         </div>
         </nav>
 
-        <BackgroundLayout>
-
-        </BackgroundLayout>
+          <BackgroundLayout></BackgroundLayout>
     </div>
   );
 }

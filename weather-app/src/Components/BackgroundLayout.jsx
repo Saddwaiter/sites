@@ -1,5 +1,4 @@
 import Clear from "../assets/images/clear.jpg"
-import Sunny from "../assets/images/sunny.jpg"
 import Fog from "../assets/images/fog.jpg"
 import Cloudy from "../assets/images/cloudy.jpg";
 import Rainy from "../assets/images/rain.jpg";
@@ -14,34 +13,33 @@ const BackgroundLayout = () => {
 
   const { weather } = useStateContext();
 
-  const { image, setImage } = useState(Clear);
+  const [ image, setImage ] = useState(Clear); // Assuming Clear is your initial image
 
   useEffect(() => {
     if (weather.conditions) {
       let imageString = weather.conditions;
-      if (imageString.toLoverCase().includes("clear")) {
+      if (imageString.toLowerCase().includes('clear')) {
         setImage(Clear);
-      }else if (imageString.toLoverCase().includes("cloud")) {
+      }else if (imageString.toLowerCase().includes('cloud')) {
         setImage(Cloudy);
       } else if (
-        imageString.toLoverCase().includes("rain") ||
-        imageString.toLowerCase().includes("shower")
+        imageString.toLowerCase().includes('rain') ||
+        imageString.toLowerCase().includes('shower')
       ) {
         setImage(Rainy);
-      } else if (imageString.toLoverCase().includes("snow")) {
+      } else if (imageString.toLowerCase().includes('snow')) {
         setImage(Snow);
-      } else if (imageString.toLoverCase().includes("fog")) {
+      } else if (imageString.toLowerCase().includes('fog')) {
         setImage(Fog);
       } else if (
-        imageString.toLoverCase().includes("thunder") ||
-        imageString.toLoverCase().includes("storm")
+        imageString.toLowerCase().includes('thunder') ||
+        imageString.toLowerCase().includes('storm')
       ) {
         setImage(Stormy);
-      }  else if (imageString.toLoverCase().includes("sunny")) {
-          setImage(Sunny);
       }
     }
   }, [weather]);
+  
   return (
     <img
       src={image}
