@@ -1,5 +1,5 @@
-import Clear from "../assets/images/clear.jpg"
-import Fog from "../assets/images/fog.jpg"
+import Clear from "../assets/images/clear.jpg";
+import Fog from "../assets/images/fog.jpg";
 import Cloudy from "../assets/images/cloudy.jpg";
 import Rainy from "../assets/images/rain.jpg";
 import Snow from "../assets/images/snowy.jpg";
@@ -10,41 +10,40 @@ import { useEffect, useState } from "react";
 //Weather images
 
 const BackgroundLayout = () => {
-
   const { weather } = useStateContext();
 
-  const [ image, setImage ] = useState(Clear); // Assuming Clear is your initial image
+  const [image, setImage] = useState(Clear); // Assuming Clear is your initial image
 
   useEffect(() => {
     if (weather.conditions) {
       let imageString = weather.conditions;
-      if (imageString.toLowerCase().includes('clear')) {
+      if (imageString.toLowerCase().includes("clear")) {
         setImage(Clear);
-      }else if (imageString.toLowerCase().includes('cloud')) {
+      } else if (imageString.toLowerCase().includes("cloud")) {
         setImage(Cloudy);
       } else if (
-        imageString.toLowerCase().includes('rain') ||
-        imageString.toLowerCase().includes('shower')
+        imageString.toLowerCase().includes("rain") ||
+        imageString.toLowerCase().includes("shower")
       ) {
         setImage(Rainy);
-      } else if (imageString.toLowerCase().includes('snow')) {
+      } else if (imageString.toLowerCase().includes("snow")) {
         setImage(Snow);
-      } else if (imageString.toLowerCase().includes('fog')) {
+      } else if (imageString.toLowerCase().includes("fog")) {
         setImage(Fog);
       } else if (
-        imageString.toLowerCase().includes('thunder') ||
-        imageString.toLowerCase().includes('storm')
+        imageString.toLowerCase().includes("thunder") ||
+        imageString.toLowerCase().includes("storm")
       ) {
         setImage(Stormy);
       }
     }
   }, [weather]);
-  
+
   return (
     <img
       src={image}
       alt="weatherImage"
-      className="h-screen w-full fixed left-0 top-0 -z-[]"
+      className="h-screen w-full fixed left-0 top-0"
     />
   );
 };

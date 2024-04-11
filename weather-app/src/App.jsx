@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 import search from './assets/icons/search.svg'
-import {BackgroundLayout} from "./Components/BackgroundLayout.jsx";
+import { BackgroundLayout } from "./Components";
 function App() {
 
   const [input, setInput] = useState('')
 
-//  const {weather} = useStateContext()
-//  console.log(weather) 
+/*   const {weather} = useStateContext()
+  console.log(weather) */
   return (
     <div className="w-full h-screen text-white px-8">
       <nav className=" w-full p-3 flex justify-between items-center">
@@ -23,8 +23,9 @@ function App() {
           }} type="text" className="focus:outline-none w-full text-black text-lg" value={input} onChange={e => setInput(e.target.value)}/>
         </div>
         </nav>
+        <BackgroundLayout>
 
-          <BackgroundLayout></BackgroundLayout>
+        </BackgroundLayout>
     </div>
   );
 }
