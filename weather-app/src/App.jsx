@@ -7,7 +7,7 @@ import { useStateContext } from "./Context";
 function App() {
 
   const [input, setInput] = useState('')
-  const {weather, thisLocation, values} = useStateContext()
+  const {weather, location, values} = useStateContext()
   //console.log(weather) 
   return (
     <div className="w-full h-screen text-white px-8">
@@ -27,7 +27,7 @@ function App() {
         <BackgroundLayout></BackgroundLayout>
           <main className=" w-full flex flex-wrap gap-8 py-4 px-[10%] items-center justify-center">
             <WeatherCard
-            place={thisLocation}
+            place={location}
             windspeed={weather.windspeed}
             humidity={weather.humidity}
             temperature={weather.temp}
@@ -36,16 +36,23 @@ function App() {
             conditions={weather.conditions}
             />
             <div className="flex justify-center gap-8 flex-wrap w-[60%]">
-              {
-                values.slice(1,7).map(curr => {
-                  <MiniCard 
-                  key={curr.datetime}
-                  time={curr.datetime}
-                  temp={curr.temp}
-                  iconString={curr.conditions}
-                  />
-                })
-              }
+            {values?.length > 0 ? (
+  // Рендер прогнозу погоди, якщо доступні values
+  <div className="flex justify-center gap-8 flex-wrap w-[60%]">
+    {values.slice(1, 7).map(curr => (
+      <MiniCard
+        key={curr.datetime}
+        time={curr.datetime}
+        temp={curr.temp}
+        iconString={curr.conditions}
+      />
+    ))}
+  </div>
+) : (
+  // Відображення індикатора завантаження або повідомлення про помилку, якщо values недоступний
+  <p>Завантаження даних про погоду...</p>
+)}
+
             </div>
           </main>
     </div>

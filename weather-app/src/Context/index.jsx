@@ -4,7 +4,6 @@ import axios from 'axios'
 
 const StateContext = createContext()
 
-// eslint-disable-next-line react/prop-types
 export const StateContextProvider = ({children}) => {
     const [weather, setWeather] = useState({})
     const [values, setValues] = useState({})
