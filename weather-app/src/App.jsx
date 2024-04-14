@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import search from './assets/icons/search.svg'
-import { BackgroundLayout } from "./Components";
+import { MiniCard, BackgroundLayout } from "./Components";
+import WeatherCard from "./Components/WeatherCard";
+import { useStateContext } from "./Context";
 function App() {
 
   const [input, setInput] = useState('')
-
-/*   const {weather} = useStateContext()
-  console.log(weather) */
+  const {weather, thisLocation, values} = useStateContext()
+  //console.log(weather) 
   return (
     <div className="w-full h-screen text-white px-8">
       <nav className=" w-full p-3 flex justify-between items-center">
@@ -23,11 +24,33 @@ function App() {
           }} type="text" className="focus:outline-none w-full text-black text-lg" value={input} onChange={e => setInput(e.target.value)}/>
         </div>
         </nav>
-        <BackgroundLayout>
-
-        </BackgroundLayout>
+        <BackgroundLayout></BackgroundLayout>
+          <main className=" w-full flex flex-wrap gap-8 py-4 px-[10%] items-center justify-center">
+            <WeatherCard
+            place={thisLocation}
+            windspeed={weather.windspeed}
+            humidity={weather.humidity}
+            temperature={weather.temp}
+            heatIndex={weather.heatindex}
+            iconString={weather.conditions}
+            conditions={weather.conditions}
+            />
+            <div className="flex justify-center gap-8 flex-wrap w-[60%]">
+              {
+                values.slice(1,7).map(curr => {
+                  <MiniCard 
+                  key={curr.datetime}
+                  time={curr.datetime}
+                  temp={curr.temp}
+                  iconString={curr.conditions}
+                  />
+                })
+              }
+            </div>
+          </main>
     </div>
-  );
+  )
 }
+console.log(typeof values);
 
 export default App;
