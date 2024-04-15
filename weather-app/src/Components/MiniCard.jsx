@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react'
-import sun from "../assets/icons/sun.jpg";
-import cloud from "../assets/icons/clouds.jpg";
-import fog from "../assets/icons/fog.jpg";
-import rain from "../assets/icons/rain.jpg";
-import snow from "../assets/icons/snow.jpg";
-import storm from "../assets/icons/storm.jpg";
-import wind from "../assets/icons/wind.jpg";
+import sun from "../assets/icons/sun.svg";
+import cloud from "../assets/icons/cloud.svg";
+import fog from "../assets/icons/fog.svg";
+import rain from "../assets/icons/rain.svg";
+import snow from "../assets/icons/snow.svg";
+import storm from "../assets/icons/storm.svg";
+import wind from "../assets/icons/wind.svg";
 
 const MiniCard = ({time, temp, iconString}) => {
   const [icon, setIcon] = useState() 
@@ -27,6 +27,9 @@ const MiniCard = ({time, temp, iconString}) => {
         setIcon(snow);
       } else if (iconString.toLowerCase().includes("wind")) {
         setIcon(wind);
+      }
+      else if (iconString.toLowerCase().includes("overcast")) {
+        setIcon(cloud);
       }
     }
   }, [iconString])

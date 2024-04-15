@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { useDate } from "./../Utils/useDate";
-import sun from "../assets/icons/sun.jpg";
-import cloud from "../assets/icons/clouds.jpg";
-import fog from "../assets/icons/fog.jpg";
-import rain from "../assets/icons/rain.jpg";
-import snow from "../assets/icons/snow.jpg";
-import storm from "../assets/icons/storm.jpg";
-import wind from "../assets/icons/wind.jpg";
+import sun from "../assets/icons/sun.svg";
+import cloud from "../assets/icons/cloud.svg";
+import fog from "../assets/icons/fog.svg";
+import rain from "../assets/icons/rain.svg";
+import snow from "../assets/icons/snow.svg";
+import storm from "../assets/icons/storm.svg";
+import wind from "../assets/icons/wind.svg";
 import "../index.css";
 
 const WeatherCard = ({
@@ -43,9 +43,9 @@ const WeatherCard = ({
   }, [iconString]);
   return (
     <div className="w-[22rem] min-w-[22rem] h-[30rem] glassCard p-4">
-      <div className=" flex w-full justify-center, items-center gap-4 mt-12 mb-4">
-        <img src={icon} alt="weatherIcon" />
-        <p className=" font-bold text-5xl flex justify-center items-center">
+      <div className=" flex w-full justify-center, items-center mt-12 ">
+        <img src={icon} alt="weatherIcon" className="w-40 h-40"/>
+        <p className=" font-bold text-4xl flex justify-center items-center">
           {temperature} &deg;C
         </p>
       </div>
