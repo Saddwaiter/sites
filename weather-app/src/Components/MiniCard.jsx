@@ -31,6 +31,9 @@ const MiniCard = ({time, temp, iconString}) => {
       else if (iconString.toLowerCase().includes("overcast")) {
         setIcon(cloud);
       }
+      else if (iconString.toLowerCase().includes("clear")) {
+        setIcon(sun);
+      }
     }
   }, [iconString])
   return (
