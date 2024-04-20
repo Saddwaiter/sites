@@ -1,7 +1,127 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 -8.5 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <title>Weather-cloud-sun</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Weather-cloud-sun" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)" stroke="#8b99b6" stroke-width="2"> <g id="Group" transform="translate(0.000000, 10.000000)" sketch:type="MSShapeGroup"> <path d="M13.7,8.9 C16.6,3.6 22.3,0 28.8,0 C38.3,0 46,7.6 46,17.1 C46,18.4 45.8,19.7 45.6,20.9" id="Shape"> </path> <path d="M46.4,14.5 C47.5,14.1 48.7,14 49.9,14 C56,14 61,18.9 61,25 C61,31.1 56,36 49.9,36 L12.6,36 C5.1,36 0,29.9 0,22.5 C0,15 5.1,9 12.6,9 C16.1,9 19.3,10.3 21.7,12.4" id="Shape"> </path> </g> <path d="M36.2,11 C38.2,8.6 41.3,7 44.7,7 C50.8,7 55.7,11.9 55.7,18 C55.7,20.2 55,22.3 53.9,24" id="Shape" sketch:type="MSShapeGroup"> </path> <path d="M45,0 L45,4" id="Shape" sketch:type="MSShapeGroup"> </path> <path d="M32,5.3 L34.8,8.1" id="Shape" sketch:type="MSShapeGroup"> </path> <path d="M63,18 L58.2,18" id="Shape" sketch:type="MSShapeGroup"> </path> <path d="M57.5,5.3 L54.6,8.1" id="Shape" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 -8.5 64 64"
+   version="1.1"
+   fill="#000000"
+   id="svg6"
+   sodipodi:docname="cloud.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.935"
+     inkscape:cx="729.73316"
+     inkscape:cy="269.25032"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier">
+    <title
+       id="title1">Weather-cloud-sun</title>
+    <desc
+       id="desc1">Created with Sketch.</desc>
+    <defs
+       id="defs1" />
+    <g
+       id="Page-1"
+       stroke="none"
+       stroke-width="1"
+       fill="none"
+       fill-rule="evenodd"
+       sketch:type="MSPage">
+      <g
+         id="Weather-cloud-sun"
+         sketch:type="MSLayerGroup"
+         transform="translate(1.000000, 0.000000)"
+         stroke="#8b99b6"
+         stroke-width="2">
+        <g
+           id="Group"
+           transform="translate(0.000000, 10.000000)"
+           sketch:type="MSShapeGroup">
+          <path
+             d="M13.7,8.9 C16.6,3.6 22.3,0 28.8,0 C38.3,0 46,7.6 46,17.1 C46,18.4 45.8,19.7 45.6,20.9"
+             id="Shape" />
+          <path
+             d="M46.4,14.5 C47.5,14.1 48.7,14 49.9,14 C56,14 61,18.9 61,25 C61,31.1 56,36 49.9,36 L12.6,36 C5.1,36 0,29.9 0,22.5 C0,15 5.1,9 12.6,9 C16.1,9 19.3,10.3 21.7,12.4"
+             id="path1" />
+        </g>
+        <path
+           d="M36.2,11 C38.2,8.6 41.3,7 44.7,7 C50.8,7 55.7,11.9 55.7,18 C55.7,20.2 55,22.3 53.9,24"
+           id="path2"
+           sketch:type="MSShapeGroup" />
+        <path
+           d="M45,0 L45,4"
+           id="path3"
+           sketch:type="MSShapeGroup" />
+        <path
+           d="M32,5.3 L34.8,8.1"
+           id="path4"
+           sketch:type="MSShapeGroup" />
+        <path
+           d="M63,18 L58.2,18"
+           id="path5"
+           sketch:type="MSShapeGroup" />
+        <path
+           d="M57.5,5.3 L54.6,8.1"
+           id="path6"
+           sketch:type="MSShapeGroup" />
+      </g>
+    </g>
+  </g>
+  <path
+     style="fill:#cccccc;stroke-width:1.01652"
+     d="M 152.71136,667.23776 C 104.90068,661.67836 64.678058,632.83341 43.237775,588.73069 35.984274,573.81023 32.665452,564.44278 29.632419,550.32927 c -5.639091,-26.24018 -5.478971,-51.26866 0.49975,-78.11598 10.833765,-48.64881 41.831566,-87.02753 84.706941,-104.87659 11.60814,-4.83249 29.1782,-8.90014 42.84025,-9.91798 39.94067,-2.97563 77.94749,8.27162 109.74393,32.47619 7.99513,6.08617 8.3135,6.22564 10.00742,4.38368 0.96227,-1.04637 4.8267,-5.40985 8.58764,-9.69664 l 6.83806,-7.79418 -6.91106,-5.52037 c -20.80355,-16.61738 -44.4658,-28.28077 -70.72307,-34.86022 l -10.83813,-2.71578 3.15687,-4.58835 c 13.35552,-19.41158 36.09322,-40.74028 57.81004,-54.22768 58.48896,-36.32503 132.81751,-40.41723 194.62353,-10.7151 22.05759,10.60023 38.73564,22.44117 55.93055,39.70911 45.67596,45.86999 65.81287,108.33638 55.89339,173.38602 -0.89519,5.87039 -1.72039,11.34873 -1.83378,12.17408 -0.15971,1.16242 2.59574,1.94995 12.22522,3.49407 6.83725,1.09638 12.64077,1.78404 12.89669,1.52812 0.25592,-0.25592 1.49425,-7.54617 2.75184,-16.20055 1.74868,-12.03394 2.28453,-20.32042 2.27803,-35.22814 l -0.008,-19.4929 4.13912,-1.03084 c 14.72867,-3.66813 42.2502,-4.02047 57.34128,-0.73411 24.78229,5.39682 46.49684,17.26523 64.21284,35.09651 34.95404,35.18147 45.53855,86.87215 27.16073,132.64266 -17.04465,42.45025 -56.70428,72.61402 -102.35174,77.84527 -10.78396,1.23585 -487.22917,1.12887 -497.89891,-0.11181 z"
+     id="path15"
+     transform="matrix(0.08,0,0,0.08,0,-8.5)" />
+  <path
+     style="fill:#ffff00;stroke-width:1.01652"
+     d="m 594.67102,393.7317 c -11.76235,-45.73743 -29.46462,-77.32283 -60.89723,-108.6563 -14.58024,-14.53426 -27.16462,-24.51756 -42.28713,-33.54678 -5.03177,-3.00432 -9.34612,-5.59909 -9.58744,-5.76614 -0.88996,-0.61606 6.76287,-7.82592 14.29396,-13.46659 14.12378,-10.57849 28.00889,-17.18526 46.54116,-22.14508 8.72402,-2.33482 11.65779,-2.61032 28.04076,-2.63323 13.66092,-0.0191 20.18734,0.4109 25.75616,1.69696 26.20301,6.05134 46.95421,17.74329 64.98359,36.61405 22.27357,23.313 33.78375,52.28905 33.78375,85.04816 0,20.74461 -4.5682,39.48749 -13.99822,57.43329 -5.51233,10.49025 -4.01808,9.96006 -20.05514,7.11598 -17.65219,-3.13052 -53.2595,-1.96378 -63.82716,2.09142 -1.23752,0.47488 -1.87853,-0.40851 -2.74706,-3.78574 z"
+     id="path16"
+     transform="matrix(0.08,0,0,0.08,0,-8.5)" />
+  <path
+     style="fill:#ffff00;stroke-width:0.0813216"
+     d="m 33.706391,7.3766823 -1.3617,-1.3634696 0.672661,-0.6691672 0.672662,-0.6691672 1.379764,1.3815584 1.379765,1.3815576 -0.64726,0.6510792 c -0.355993,0.3580936 -0.66682,0.6510792 -0.690726,0.6510792 -0.02391,0 -0.656231,-0.6135616 -1.405166,-1.3634704 z"
+     id="path7" />
+  <path
+     style="fill:#ffff00;stroke-width:0.0813216"
+     d="m 45.052096,1.9904704 v -1.992376 h 0.935197 0.935197 v 1.992376 1.992376 h -0.935197 -0.935197 z"
+     id="path8" />
+  <path
+     style="fill:#ffff00;stroke-width:1.01652"
+     d="m 694.94617,206.6994 -7.63207,-8.29425 17.46112,-17.04067 17.46112,-17.04067 8.3919,8.29138 c 4.61554,4.56026 8.275,8.53121 8.13214,8.82433 -0.76599,1.57164 -34.25871,33.55413 -35.13857,33.55413 -0.57397,0 -4.478,-3.73241 -8.67564,-8.29425 z"
+     id="path9"
+     transform="matrix(0.08,0,0,0.08,0,-8.5)" />
+  <path
+     style="fill:#ffff00;stroke-width:0.0813216"
+     d="m 59.222363,18.010801 v -0.935198 h 2.398984 2.398983 v 0.935198 0.935197 h -2.398983 -2.398984 z"
+     id="path10" />
+</svg>

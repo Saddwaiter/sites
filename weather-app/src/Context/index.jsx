@@ -11,8 +11,6 @@ export const StateContextProvider = ({children}) => {
     const [place, setPlace] = useState('Jaipur')
     const [location, setLocation] = useState('')
 
-    //fetch api
-
     const fetchWeather = async() => {
         const options = {
             method: 'GET',
@@ -40,7 +38,6 @@ export const StateContextProvider = ({children}) => {
         }
         catch(e) {
             console.log(e)
-            //if the API trows error
             alert('This place does not exist')
         }
     }
