@@ -4,6 +4,8 @@ import search from "./assets/icons/search.svg";
 import { MiniCard, BackgroundLayout } from "./Components";
 import WeatherCard from "./Components/WeatherCard";
 import { useStateContext } from "./Context";
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   const [input, setInput] = useState("");
   const { weather, location, values, place,setPlace } = useStateContext();
@@ -66,6 +68,7 @@ function App() {
           )}
         </div>
       </main>
+      <ToastContainer />
     </div>
   );
 }

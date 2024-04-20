@@ -1,5 +1,6 @@
 import { useContext, createContext, useState, useEffect } from "react";
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 
 const StateContext = createContext()
@@ -38,7 +39,7 @@ export const StateContextProvider = ({children}) => {
         }
         catch(e) {
             console.log(e)
-            alert('This place does not exist')
+            toast.error('This place does not exist');
         }
     }
 
