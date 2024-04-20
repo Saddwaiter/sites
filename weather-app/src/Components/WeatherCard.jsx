@@ -41,8 +41,9 @@ const WeatherCard = ({
       }
     }
   }, [iconString]);
+  const displayHeatIndex = heatIndex !== null && heatIndex !== undefined ? heatIndex : temperature;
   return (
-    <div className="w-[22rem] min-w-[22rem] h-[30rem] glassCard p-4">
+    <div className="w-[22rem] min-w-[22rem] h-[32rem] glassCard p-4">
       <div className=" flex w-full justify-center, items-center mt-12 ">
         <img src={icon} alt="weatherIcon" className="w-40 h-40"/>
         <p className=" font-bold text-4xl flex justify-center items-center">
@@ -55,17 +56,17 @@ const WeatherCard = ({
         <p className=" flex-1 text-center p-2">{time}</p>
       </div>
       <div className=" w-full flex justify-between items-center mt-4 gap-4">
-        <p className=" flex-1 text-center  p-2 font-bold bg-blue-600 shadow rounded-lg">
+        <p className=" flex-1 text-center  p-2 font-bold bg-gray-400 shadow rounded-lg">
           Wind speed <p className=" font-normal ">{windspeed} km/h</p>
         </p>
 
-        <p className=" flex-1 text-center p-2 font-bold rounded-lg bg-green-600 ">
+        <p className=" flex-1 text-center p-2 font-bold rounded-lg bg-blue-400 ">
           Humidity <p className=" font-normal">{humidity} gm/m&#179;</p>
         </p>
       </div>
       <div className=" w-full p-3 mt-4 flex justify-between items-center">
         <p className=" font-semibold text-lg">Heat Index </p>
-        <p className="text-lg">{heatIndex ? heatIndex : "N/A"}</p>
+        <p className="text-lg font-bold">{displayHeatIndex}°C</p>
       </div>
       <hr className=" bg-slate-600" />
       <div className=" w-full p-4 flex justify-center items-center text-3xl font-semibold">
