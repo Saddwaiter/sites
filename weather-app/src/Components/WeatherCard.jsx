@@ -39,11 +39,17 @@ const WeatherCard = ({
       } else if (iconString.toLowerCase().includes("wind")) {
         setIcon(wind);
       }
+      else if (iconString.toLowerCase().includes("clear")) {
+        setIcon(sun);
+      }
+      else if (iconString.toLowerCase().includes("overcast")) {
+        setIcon(cloud);
+      }
     }
   }, [iconString]);
   const displayHeatIndex = heatIndex !== null && heatIndex !== undefined ? heatIndex : temperature;
   return (
-    <div className="w-[22rem] min-w-[22rem] h-[32rem] glassCard p-4">
+    <div className="w-[22rem] min-w-[22rem] h-[35rem] glassCard p-4">
       <div className=" flex w-full justify-center, items-center mt-12 ">
         <img src={icon} alt="weatherIcon" className="w-40 h-40"/>
         <p className=" font-bold text-4xl flex justify-center items-center">

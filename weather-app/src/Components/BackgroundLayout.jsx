@@ -7,12 +7,10 @@ import Stormy from "../assets/images/stormy.jpg";
 import { useStateContext } from "../Context";
 import { useEffect, useState } from "react";
 
-//Weather images
-
 const BackgroundLayout = () => {
   const { weather } = useStateContext();
 
-  const [image, setImage] = useState(Clear); // Assuming Clear is your initial image
+  const [image, setImage] = useState(Clear); 
 
   useEffect(() => {
     if (weather.conditions) {
@@ -30,6 +28,9 @@ const BackgroundLayout = () => {
         setImage(Snow);
       } else if (imageString.toLowerCase().includes("fog")) {
         setImage(Fog);
+      }
+      else if (imageString.toLowerCase().includes("overcast")) {
+        setImage(Cloudy);
       } else if (
         imageString.toLowerCase().includes("thunder") ||
         imageString.toLowerCase().includes("storm")
